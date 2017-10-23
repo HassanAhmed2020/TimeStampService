@@ -1,5 +1,18 @@
-var express = require('express');
-var app = express();
+
+
+
+    var express = require('express');
+    var path = require('path');
+    var strftime = require('strftime');
+
+    var app = express();
+    
+    var inputTime;
+    var convertedTime = {unixTime: null, naturalTime: null};
+
+
+
+
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -11,7 +24,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
 //  response.render('pages/index');
-response.end("Hello World");
+response.end("Hello World 2");
 });
 
 app.listen(app.get('port'), function() {
