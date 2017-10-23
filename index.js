@@ -3,7 +3,7 @@
 
     var express = require('express');
     var path = require('path');
-//    var strftime = require('strftime');
+    var strftime = require('strftime');
 
     var app = express();
     
@@ -24,7 +24,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
 //  response.render('pages/index');
-response.end("Hello World 2");
+response.end("Hello World 3");
 });
 
 app.listen(app.get('port'), function() {
